@@ -5,14 +5,14 @@
 rm(list=ls())
 
 if (!require(sna)){  install.packages("sna") }
-if (!require(sna)){  install.packages("rgl") } 
-if (!require(sna)){  install.packages("network") } 
+if (!require(rgl)){  install.packages("rgl") } 
+if (!require(network)){  install.packages("network") } 
 
 library(network)
 library(sna)
 library(rgl)
 
-setwd('/home/jrperin/Documentos/FGV/SNA_e_TextMining/Aula 1')
+setwd('C:/Users/jrper/Documents/FGV/SNA_e_TextMining/SNA_e_TextMining_Tarefa1')
 # Trabalha a partir de uma rede aleatória
 rede <- read.table("Rede One Mode_Tarefa Aula 1_Paulista T4.csv",header=TRUE,sep = ",", dec=".")
 rede
